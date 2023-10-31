@@ -134,8 +134,8 @@ class Captcha extends \Prefab {
       $captcha
     );
 
-    $x = ($width - $text[4]) / 2;
-    $y = ($height - $text[5]) / 2;
+    $x = round(($width - $text[4]) / 2);
+    $y = round(($height - $text[5]) / 2);
 
     imagettftext(
       $captchaImage,
